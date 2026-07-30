@@ -1,0 +1,11 @@
+generated: '2026-07-20'
+method: searched
+host: https://secure.livelyme.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: lively-security.txt
+notes: |
+  livelyme.com/.well-known/security.txt 301-redirects to secure.livelyme.com/.well-known/security.txt (RFC 9116).
+  Probed and not found (404/no route): /.well-known/openid-configuration, /.well-known/oauth-authorization-server,
+  /.well-known/api-catalog, /.well-known/ai-plugin.json — Lively publishes no public API/OAuth discovery surface.
