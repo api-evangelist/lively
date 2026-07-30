@@ -1,8 +1,19 @@
 aid: lively
 name: Lively
-description: 'Lively is a company surfaced as a portfolio company of costanoa-ventures, ggv-capital and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech-healthtech. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  Lively is a fintech-healthtech company that provides modern, cloud-based Health
+  Savings Accounts (HSA) alongside Flexible Spending Accounts (FSA), Health
+  Reimbursement Arrangements (HRA), COBRA, and commuter benefits for individuals,
+  families, employers, benefits administrators, and third-party administrators.
+  Lively pairs interest-bearing and investment-enabled HSAs (via a Schwab Health
+  Savings Brokerage Account and a guided HSA portfolio) with an employer dashboard
+  for contributions and administration, positioning itself around transparent,
+  zero-hidden-fee pricing. Backed by Costanoa Ventures and GGV Capital, Lively
+  integrates with benefit administration platforms and third-party administrators
+  but does not currently publish a public developer API or developer portal;
+  integration is handled through its sales and partnerships channels. This profile
+  was surfaced as a VC-portfolio lead and enriched by the API Evangelist pipeline
+  from Lively's public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/lively/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +22,31 @@ x-backed-by:
 - ggv-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Fintech Healthtech
+- Fintech
+- Healthtech
+- Health Savings Account
+- HSA
+- FSA
+- Employee Benefits
+- Financial Services
+- Insurance
+image: https://livelyme.com/favicon.ico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +56,32 @@ maintainers:
 common:
 - type: Website
   url: https://livelyme.com
+- type: Pricing
+  url: https://livelyme.com/pricing
+- type: Blog
+  url: https://livelyme.com/blog
+- type: Support
+  url: https://support.livelyme.com/hc/en-us
+- type: HelpCenter
+  url: https://support.livelyme.com/hc/en-us
+- type: TrustCenter
+  url: https://trust.livelyme.com/
+- type: PrivacyPolicy
+  url: https://livelyme.com/privacy
+- type: TermsOfService
+  url: https://livelyme.com/terms-and-conditions
+- type: SecurityTxt
+  url: https://secure.livelyme.com/.well-known/security.txt
+- type: WellKnown
+  url: well-known/lively-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/lively-vulnerability-disclosure.yml
+- type: Security
+  url: https://secure.livelyme.com/.well-known/security.txt
+- type: DomainSecurity
+  url: security/lively-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
