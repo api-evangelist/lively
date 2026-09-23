@@ -1,0 +1,26 @@
+# Front Door AI Index — lively — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: lively
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: livelyme.com
+  final_host: livelyme.com
+  ownership: own
+  owner: lively
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 8
+  host_score: 8
+  density: 6.04
+  words: 1324
+  tiers:
+    agentic: 0
+    core: 8
+    model: 0
+  ambiguous: 1
+  top_terms:
+    AI: 8
+    smart: 1

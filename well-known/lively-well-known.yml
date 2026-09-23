@@ -1,11 +1,23 @@
 generated: '2026-07-20'
 method: searched
 host: https://secure.livelyme.com
-documents:
-- path: /.well-known/security.txt
-  status: 200
-  file: lively-security.txt
-notes: |
-  livelyme.com/.well-known/security.txt 301-redirects to secure.livelyme.com/.well-known/security.txt (RFC 9116).
+notes: 'livelyme.com/.well-known/security.txt 301-redirects to secure.livelyme.com/.well-known/security.txt
+  (RFC 9116).
+
   Probed and not found (404/no route): /.well-known/openid-configuration, /.well-known/oauth-authorization-server,
-  /.well-known/api-catalog, /.well-known/ai-plugin.json — Lively publishes no public API/OAuth discovery surface.
+
+  /.well-known/api-catalog, /.well-known/ai-plugin.json — Lively publishes no public API/OAuth discovery
+  surface.
+
+  '
+hosts:
+- host: https://secure.livelyme.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: lively-security.txt
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
